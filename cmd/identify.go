@@ -56,8 +56,8 @@ func identify() {
 	serialport.SendCommand(port, "I")
 
 	// Process response
-	_ = serialport.Readline(port) // Read and discard initial blank line
-	line := serialport.Readline(port)  // Read 1st line of response
+	_ = serialport.Readline(port)     // Read and discard initial blank line
+	line := serialport.Readline(port) // Read 1st line of response
 	fmt.Println(line)
 	line = serialport.Readline(port) // Read 2nd line of response
 	fmt.Println(line)

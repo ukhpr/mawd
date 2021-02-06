@@ -39,6 +39,7 @@ var telemetryCmd = &cobra.Command{
 func init() {
 	showCmd.AddCommand(telemetryCmd)
 }
+
 func showTelemetryStatus() {
 	// Open serial port
 	mode := &serial.Mode{
