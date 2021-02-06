@@ -13,20 +13,20 @@ Serial data format:	8N1, XOn/XOff, 38,400 bps for commands+data, 9,600 bps for t
 
 Command | Action | Implemented?
 ------- | ------ | ------------
-A0 | Turn 1 second apogee delay Off | TODO
-A1 | Turn 1 second apogee delay On | TODO
+A0 | Turn 1 second apogee delay Off | needs testing
+A1 | Turn 1 second apogee delay On | needs testing
 A[CR] | Report current status of apogee delay On/Off | needs testing
-C | Start continuity beep sequence (send any char to end) | TODO
+C | Start continuity beep sequence (send any char to end) | needs testing
 D | Dump data from last run | needs testing
-FD | Fire drogue channel | TODO
-FM | Fire main channel | TODO
+FD | Fire drogue channel | needs testing
+FM | Fire main channel | needs testing
 I | Identify altimeter model | needs testing
 Lxx | Set low voltage alarm threshold to xx/10 volts | TODO
 L[CR] | Report current low voltage alarm threshold | needs testing
 R | Reboot | needs testing
 S | Report stats (ground, apogee, #samps, machdel, mainalt) | needs testing
-T0 | Turn telemetry output during flight Off | TODO
-T1	 | 	Turn telemetry output during flight On | TODO
+T0 | Turn telemetry output during flight Off | needs testing
+T1	 | 	Turn telemetry output during flight On | needs testing
 T[CR] | Report current status of telemetry output On/Off | needs testing
 V | Report firmware version number | needs testing
 
