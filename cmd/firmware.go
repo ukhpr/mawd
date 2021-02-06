@@ -56,7 +56,7 @@ func firmware() {
 	serialport.SendCommand(port, "V")
 
 	// Process response
-	line := serialport.Readline(port) // Read blank line
-	line = serialport.Readline(port)  // Read 1st line of response
+	_ = serialport.Readline(port)     // Read and discard blank line
+	line := serialport.Readline(port) // Read 1st line of response
 	fmt.Println(line)
 }
